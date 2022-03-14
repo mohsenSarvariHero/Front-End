@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0 40px;
+}
+
+nav {
+    background-color: rgba(222, 243, 247, 0.815);
+    display: flex;
+    justify-content: space-around;
+    height: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(59, 58, 58);
+}
+
+section {
+    margin-left: 150px;
+}
+
+section ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+section ul li {
+    float: left;
+    margin-right: 40px;
+}
+
+section ul li:nth-of-type(8) {
+    margin-right: 160px;
+}
+
+section ul li a {
+    text-decoration: none;
+    color: rgb(39, 38, 38);
+}
+
+section ul li a:hover {
+    color: aqua;
+}
+
+section ul li a.active {
+    color: rgb(64, 165, 165);
+}
+
+.backAll {
+    display: flex;
+}
+
+.back1 {
+    background-image: url("images\ \(4\).jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 400px;
+}
+
+.back2 {
+    background-image: url("images\ \(2\).jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 400px;
+}
+
+.back3 {
+    background-image: url("download.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 400px;
+}
+
+.back4 {
+    background-image: url("1984935_635.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 400px;
+}
+
+.back4::after {
+    content: "→";
+    background-color: white;
+    color: rgb(15, 15, 15);
+    border-radius: 50%;
+    padding: 10px;
+    position: relative;
+    left: 80%;
+    top: 50%;
+}
+
+aside {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.back5 {
+    background-image: url("1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 350px;
+}
+
+.back5::after {
+    content: "Life & Foods";
+    background-color: white;
+    color: rgb(34, 111, 121) !important;
+    font-weight: bold;
+    position: relative;
+    top: 50%;
+    left: 32%;
+    padding: 10px 15px;
+    font-style: italic;
+}
+
+.back6 {
+    background-image: url("2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 350px;
+}
+
+.back6::after {
+    content: "Categories";
+    background-color: white;
+    color: rgb(34, 111, 121) !important;
+    font-weight: bold;
+    position: relative;
+    top: 50%;
+    left: 35%;
+    padding: 10px 15px;
+    font-style: italic;
+}
+
+.back7 {
+    background-image: url("3.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 320px;
+}
+
+.back7::after {
+    font-style: italic;
+    content: "About Us";
+    background-color: white;
+    color: rgb(34, 111, 121) !important;
+    font-weight: bold;
+    position: relative;
+    top: 50%;
+    left: 37%;
+    padding: 10px 15px;
+}

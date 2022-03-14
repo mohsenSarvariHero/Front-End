@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("cover-4.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+
+nav {
+    margin: 0;
+    margin-top: 40px;
+}
+
+nav ul {
+    background-color: rgba(255, 255, 255, 0.445);
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+    width: 120px;
+    text-align: center;
+}
+
+nav ul li:first-child {
+    text-align: left;
+    width: 630px;
+    padding: 0px 50px 0px 40px;
+    margin-left: 88px;
+    margin-right: -50px;
+}
+
+nav ul li a {
+    padding-top: 500px;
+    width: 100%;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 0px;
+    font-size: 20px;
+}
+
+.height {
+    height: 64.5px;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.849);
+}
+
+.active {
+    background-color: rgba(255, 255, 255, 0.849);
+}
+
+nav ul img {
+    border-radius: 50%;
+    height: 60px;
+    width: 70px;
+}
+
+section {
+    width: 80%;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.445);
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 40px;
+    padding: 50px;
+}
+
+section .card {
+    background-color: rgba(255, 255, 255, 0.719);
+    text-align: center;
+    height: fit-content;
+}

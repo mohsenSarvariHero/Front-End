@@ -1,0 +1,71 @@
+@import "import";
+@import "colors";
+$color:blue;
+$back:gray;
+$back2:green;
+$back3:rgb(110, 143, 187);
+.style {
+    color: $color;
+    background-color: $back;
+    .style2 {
+        $color: yellow;
+        color: $color;
+        text-align: center;
+    }
+}
+
+.style3 {
+    background-color: $back2;
+}
+
+.style4 {
+    background-color: $back3;
+}
+
+nav {
+    ul {
+        list-style-type: none;
+    }
+    li {
+        display: inline-block;
+    }
+    a {
+        text-decoration: none;
+    }
+    div {
+        color: $myblue;
+        background-color: $mygreen;
+        border: 2px solid $myred;
+    }
+}
+
+@mixin styletype($color:yellow, $width:2px) {
+    color: powderblue;
+    background-color: rgb(34, 133, 21);
+    border: $width solid $color;
+    margin-top: 20px;
+}
+
+section {
+    .style2 {
+        @include styletype(red, 5px);
+        text-align: center;
+    }
+}
+
+@mixin styletype2($color:green, $width:1px) {
+    border: $width solid $color;
+    margin-top: 10px;
+    text-align: center;
+}
+
+@mixin anima($property) {
+    transform: $property;
+}
+
+section {
+    .style5 {
+        @include styletype2;
+        @include anima(rotate(45deg));
+    }
+}
